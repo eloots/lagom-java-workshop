@@ -45,3 +45,5 @@ def common = Seq(
 lazy val jacksonParameterNamesJavacSettings = Seq(
   javacOptions in compile += "-parameters"
 )
+
+aggregateProjects(`basket-api`, `basket-impl`)
