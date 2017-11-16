@@ -1,2 +1,2 @@
-exercise-001-first-assignment
+exercise-000-first-assignment
 
