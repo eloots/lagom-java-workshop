@@ -4,7 +4,8 @@ lazy val base = (project in file("."))
     common,
     exercise_000_assignment_one,
     exercise_001_assignment_two,
-    exercise_002_assigment_three_prep
+    exercise_002_assigment_three_prep,
+		exercise_003_assignment_three
  )
   .settings(CommonSettings.commonSettings: _*)
 
@@ -20,5 +21,9 @@ lazy val exercise_001_assignment_two = project
   .dependsOn(common % "test->test;compile->compile")
 
 lazy val exercise_002_assigment_three_prep = project
+  .settings(CommonSettings.commonSettings: _*)
+  .dependsOn(common % "test->test;compile->compile")
+
+lazy val exercise_003_assignment_three = project
   .settings(CommonSettings.commonSettings: _*)
   .dependsOn(common % "test->test;compile->compile")
